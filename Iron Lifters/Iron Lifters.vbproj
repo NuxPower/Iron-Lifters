@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89B78409-D3F6-4EF4-B384-52484698BB74}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Iron_Lifters.My.MyApplication</StartupObject>
+    <RootNamespace>Iron_Lifters</RootNamespace>
+    <AssemblyName>Iron Lifters</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Iron Lifters.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Iron Lifters.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Iron Lifters.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Iron Lifters.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.30.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.6.0.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.6.0\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="QuestPDF">
+      <HintPath>C:\Users\Asus\Downloads\questpdf.2024.12.0-rc3\lib\netstandard2.0\QuestPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel.Services" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Log" />
+    <Reference Include="System.IO.Pipelines, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.DurableInstancing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFaculty.Designer.vb">
+      <DependentUpon>AddFaculty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddFaculty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMember.Designer.vb">
+      <DependentUpon>AddMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMembershipPlan.Designer.vb">
+      <DependentUpon>AddMembershipPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddMembershipPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoggedModule.vb" />
+    <Compile Include="AdminLogin.Designer.vb">
+      <DependentUpon>AdminLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceLogs.Designer.vb">
+      <DependentUpon>AttendanceLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceLogs.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoCloseMessageBox.Designer.vb">
+      <DependentUpon>AutoCloseMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCloseMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FacultyLogs.Designer.vb">
+      <DependentUpon>FacultyLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyLogs.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FacultyManagement.Designer.vb">
+      <DependentUpon>FacultyManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyManagement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GlobalModule.vb" />
+    <Compile Include="InvoiceModule.vb" />
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members.Designer.vb">
+      <DependentUpon>Members.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Members.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PaymentLogs.Designer.vb">
+      <DependentUpon>PaymentLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentLogs.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PaymentProcess.Designer.vb">
+      <DependentUpon>PaymentProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddFaculty.resx">
+      <DependentUpon>AddFaculty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMember.resx">
+      <DependentUpon>AddMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMembershipPlan.resx">
+      <DependentUpon>AddMembershipPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceLogs.resx">
+      <DependentUpon>AttendanceLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoCloseMessageBox.resx">
+      <DependentUpon>AutoCloseMessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyLogs.resx">
+      <DependentUpon>FacultyLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyManagement.resx">
+      <DependentUpon>FacultyManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members.resx">
+      <DependentUpon>Members.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentLogs.resx">
+      <DependentUpon>PaymentLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentProcess.resx">
+      <DependentUpon>PaymentProcess.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\302545659_481884507279435_1553771727610696154_n-removebg-preview 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Control Panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\members.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentlogs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ledger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attendance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-png-icon-16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout Rounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checked User Male.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
